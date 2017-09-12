@@ -4,4 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+    <plugins>
+
+        <plugin interceptor="com.github.pagehelper.PageInterceptor">
+            <!--指定使用什么数据库-->
+            <property name="helperDialect" value="mysql"></property>
+        </plugin>
+
+    </plugins>
+    
 </configuration>
