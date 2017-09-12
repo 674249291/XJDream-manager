@@ -5,6 +5,7 @@ import com.XJDream.pojo.TbItem;
 import com.XJDream.pojo.TbItemExample;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,7 +16,9 @@ import java.util.List;
  * Created by Administrator on 2017/9/12.
  */
 public class TestPageHelper {
+
     @Test
+    @Ignore
     public void testPageHelper() throws Exception {
         //1、获得mapper代理对象
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-*.xml");
